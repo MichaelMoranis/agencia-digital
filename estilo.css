@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #1f1945;
+
+}
+
+.navbar {
+  display: flex;
+  flex-flow: row wrap;
+  height: 100px;
+  background:#1f1945;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  flex: 20%;
+  margin-left: 10%;
+}
+
+.logo h1 {
+  font-family: "Lobster", cursive;
+  color: white;
+  font-size: 34px;
+}
+
+.menu {
+   flex: 70%;
+   text-align: right;
+   padding: 20px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  padding:20px 16px;
+}
+
+.menu a:hover {
+  color:#FF2978;
+  border-top: 4px solid #180F4A;
+}
+
+#botao {
+  background: #FF2978;
+  padding: 10px 25px;
+  color: white;
+  border-radius: 5px;
+  margin-right:10%;
+  margin-left: 5px;
+}
+
+#botao:hover {
+  border: none;
+  background:#180F4A ;
+}
+
+.header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  background:#1f1945;
+  color: white;
+
+}
+.headline {
+     margin-left: 10%;
+     flex: 40%;
+     color: white;
+}
+
+.headline h2 {
+    font-weight: 900;
+    font-size: 20px;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+.headline p {
+   color: gray;
+   text-align: left;
+}
+
+.botao-contato {
+  display: inline-block;
+  background:#FF2978 ;
+  padding: 20px;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 5px;
+  text-decoration: none;
+
+}
+.botao-contato:hover {
+  background: #180F4A;
+}
+
+.headline .h2Font {
+  font-size: 80px;
+}
+.headline .h2font {
+   letter-spacing: 15px; 
+}
+.img-headline {
+  margin-right: 10%;
+  flex: 40%;
+  text-align: center;
+}
+
+section {
+  color: white;
+  display: inline-block;
+  margin-top: 80px;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+  padding: 5%;
+}
+ section #tituloh2 {
+  color: white;
+}
+section h2 {
+  width: 100%;
+  font-size: 50px;
+  margin: 0;
+  font-family: "Lobster", cursive;
+  font-weight: bold;
+  color: #180F4A;
+}
+
+.servicos {
+  display: inline-block;
+  margin-top: 5%;
+
+}
+.card {
+  display: inline-block;
+  width: 30%;
+  padding: 20px;
+  margin: 1%;
+  border: 1px solid #FF2978;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.texto-oculto {
+  display: none;
+}
+.card:hover {
+  background: #FF2978;
+  color: white;
+  padding: 40px;
+}
+
+.card:hover img {
+  display: none;
+}
+.card:hover .card-text {
+  display: none;
+}
+.card:hover .texto-oculto {
+  display: block;
+}
+footer {
+  margin-top: 100px;
+  height: 300px;
+  background-image:linear-gradient(180deg, #180F4A,#090422,black) ;
+  text-align: center;
+  border-top: 5px solid #FF2978;
+}
+
+.logo-rodape {
+  padding: 100px;
+}
+.agencia {
+  font-family: "Lobster", cursive;
+  color: white;
+  font-size: 34px;
+}
+.paragrafo-fim {
+  color: white;
+}
+@media  screen and (max-width:1005px) {
+  .navbar {
+    position: relative;
+  }
+  .menu {
+    display: none;
+  }
+  .logo {
+    margin: 0;
+    text-align: center;
+  }
+  .header {
+    padding: 50px;
+  }
+  .headline {
+    flex: 100%;
+    margin: 5%;
+    text-align: center;
+  }
+  .headline p {
+    text-align: center;
+  }
+  .img-headline {
+    flex: 100%;
+    margin: 5%;
+    text-align: center;
+  }
+  .card {
+    width: 100%;
+  }
+}
